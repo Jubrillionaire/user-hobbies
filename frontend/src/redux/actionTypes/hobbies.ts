@@ -1,0 +1,5 @@
+export enum ActionType {
+    ADD_HOBBY = 'ADD_HOBBY',
+    DELETE_HOBBY = 'DELETE_HOBBY',
+    FETCH_HOBBIES = 'FETCH_HOBBIES'
+}
