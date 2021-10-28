@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { getAllHobbies, createHobby, deleteHobby, updateHobby } from '../controllers/hobbies-controller';
+import { getAllHobbies, createHobby, deleteHobby } from '../controllers/hobbies-controller';
 
 const router = Router();
 
@@ -9,6 +9,5 @@ router.post("/", createHobby)
 
 router.delete("/:id/:user_id", deleteHobby)
 
-router.put("/:id", updateHobby)
 
 export default router
