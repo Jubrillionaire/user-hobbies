@@ -30,7 +30,10 @@ const User: FC <Iprops> =  ({setSelectedUser, selectedUser}) => {
         if(formData){
             dispatch(addUser(formData));
         }else{
-            alert("please enter a value")        }
+            alert("please enter a value") 
+        
+        }
+        setFormData("")
       
     };
 
@@ -48,7 +51,7 @@ const User: FC <Iprops> =  ({setSelectedUser, selectedUser}) => {
         <>
             <div className="table__column-user">
                 <form onSubmit={handleSubmit}>
-                    <input required onChange={(e: ChangeEvent<HTMLInputElement>) => { setFormData(e.target.value) }} type="text" name="username" />
+                    <input required onChange={(e: ChangeEvent<HTMLInputElement>) => { setFormData(e.target.value) }} type="text" value={formData} name="username" />
                     <button>add</button>
                 </form>
 
