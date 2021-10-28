@@ -22,6 +22,6 @@ const hobbySchema = new mongoose.Schema({
 
 });
 
-const HubbyModel = mongoose.model("Hobby", hobbySchema);
+const HobbyModel = mongoose.model("Hobby", hobbySchema);
 
-export default HubbyModel;
+export default HobbyModel;
