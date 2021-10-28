@@ -106,7 +106,7 @@ clearForm()
                 <li className="table__column-hobbies-group">
                   <div>Passion: {hobby.passionLevel}</div>
                   {hobby.name}
-                  <div>       Since {hobby.year} <span onClick={() => handleDelete(hobby._id, hobby.user)} ><i className="fas fas-trash"></i>delete</span>
+                   <div>       Since {hobby.year} <span onClick={() => handleDelete(hobby._id, hobby.user)} ><i className="fa fa-trash"></i></span>
                   </div>
                 </li>
               ))}
