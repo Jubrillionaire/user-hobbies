@@ -21,7 +21,7 @@ const deleteHobby = async (req: Request, res: Response) => {
 
         await user.save()
 
-        const deleted: number = await Hobby.findByIdAndDelete(id);
+        const deleted = await Hobby.findByIdAndDelete(id);
             return res.status(204).send("Hobby deleted");
     } catch (error) {
         return res.send(error)
