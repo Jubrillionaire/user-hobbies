@@ -53,29 +53,11 @@ const createHobby = async (req: Request, res: Response) => {
     }
 }
 
-const updateHobby = async (req: Request, res: Response) => {
-    const id: string = req.params.user_id;
-    const body: {
-        passionLevel: string,
-        name: string,
-        year: number
-        user: string
-    } = req.body ?? null;
-    try {
-        const updatedHobby = await User.findByIdAndUpdate(id, body)
 
-        return res.status(201).json({
-            updatedHobby,
-        });
-    } catch (error) {
-        return res.send(error)
-    }
-}
 export {
     createHobby,
     getAllHobbies,
-    deleteHobby,
-    updateHobby
+    deleteHobby
 }
 
 
